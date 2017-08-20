@@ -9,7 +9,7 @@
 
 
 ## What is this repository? 
-This repository contains contains a working implementation of a new generative multimodal architecture. Totally unsupervised, and with large invariance to hyperparameters, this implementation learns to classify MNIST in terms of [FSDD](https://github.com/Jakobovski/free-spoken-digit-dataset)(audio version of MNIST) and vice versa with `~97.8%` accuracy and discovers the correct number of classes within the data. 
+This repository contains a working implementation of a new generative multimodal architecture. Totally unsupervised, and with large invariance to hyperparameters, this implementation learns to classify MNIST in terms of [FSDD](https://github.com/Jakobovski/free-spoken-digit-dataset)(audio version of MNIST) and vice versa with `~97.8%` accuracy and discovers the correct number of classes within the data. 
  
 
 ## TLDR: Why this architecture is neat.
