@@ -29,5 +29,5 @@ def generate_tsne(encodings_path, labels_path):
 
 
 if __name__ == '__main__':
-    generate_tsne('../data/mnist_train_encodings.npy', '../data/mnist_train_encodings_labels.npy')
+    generate_tsne('./data/mnist_train_encodings.npy', './data/mnist_train_encodings_labels.npy')
     # generate_tsne('../data/fsdd_train_encodings.npy', '../data/fsdd_train_encodings_labels.npy')

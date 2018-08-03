@@ -6,18 +6,31 @@ from collections import defaultdict
 import numpy as np
 
 # Load visual data
-v_train_data = np.load('../data/mnist_train_encodings.npy')
-v_train_labels = np.load('../data/mnist_train_encodings_labels.npy')
+# v_train_data = np.load('../data/mnist_train_encodings.npy')
+# v_train_labels = np.load('../data/mnist_train_encodings_labels.npy')
+#
+# v_test_data = np.load('../data/mnist_test_encodings.npy')
+# v_test_labels = np.load('../data/mnist_test_encodings_labels.npy')
+#
+# # Load audio data
+# a_train_data = np.load('../data/fsdd_train_encodings.npy')
+# a_train_labels = np.load('../data/fsdd_train_encodings_labels.npy')
+#
+# a_test_data = np.load('../data/fsdd_test_encodingsnpy')
+# a_test_labels = np.load('../data/fsdd_test_encodings_labels.npy')
 
-v_test_data = np.load('../data/mnist_test_encodings.npy')
-v_test_labels = np.load('../data/mnist_test_encodings_labels.npy')
+v_train_data = np.load('./data/mnist_train_encodings.npy')
+v_train_labels = np.load('./data/mnist_train_encodings_labels.npy')
+
+v_test_data = np.load('./data/mnist_test_encodings.npy')
+v_test_labels = np.load('./data/mnist_test_encodings_labels.npy')
 
 # Load audio data
-a_train_data = np.load('../data/fsdd_train_encodings.npy')
-a_train_labels = np.load('../data/fsdd_train_encodings_labels.npy')
+a_train_data = np.load('./data/fsdd_train_encodings.npy')
+a_train_labels = np.load('./data/fsdd_train_encodings_labels.npy')
 
-a_test_data = np.load('../data/fsdd_test_encodingsnpy')
-a_test_labels = np.load('../data/fsdd_test_encodings_labels.npy')
+a_test_data = np.load('./data/fsdd_test_encodingsnpy')
+a_test_labels = np.load('./data/fsdd_test_encodings_labels.npy')
 
 audio_dict = defaultdict(list)
 for idx, label in enumerate(a_train_labels):

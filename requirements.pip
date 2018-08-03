@@ -24,3 +24,6 @@ six==1.10.0
 traitlets==4.2.1
 Wand==0.4.3
 yadlt==0.0.2rc3
+tensorflow==0.12.0rc0
+matplotlib==2.2.2
+scikit-learn==0.19.2
