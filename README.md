@@ -146,27 +146,33 @@ ___________________________________________________
 ## Code and Installation
 
 
+
+
 ##### How to use this repository:
 Before using the repository make sure to install all the requirements.
-```bash 
-$ pip install -r requirements.pip
+```bash
+virtualenv -p python2 ./venv
+source ./venv/bin/activate
+pip install -r requirements.pip
 ```
+
+##### Running the complete algorithm
+```bash
+export PYTHONPATH=.
+python examples/basic_example.py
+```
+
 
 
 ##### Generating encodings
 ```bash 
-$ python utils/fsdd_encoding_generator.py
-$ python utils/mnist_encoding_generator.py
-```
-
-
-##### Running the complete algorithm
-```bash 
-$ python examples/basic_example.py
+python utils/fsdd_encoding_generator.py
+python utils/mnist_encoding_generator.py
 ```
 
 
 ##### Generating TSNE visualization of the encodings
 ```bash 
-$ python utils/tsne_generator.py
+python utils/tsne_generator.py
 ```
+

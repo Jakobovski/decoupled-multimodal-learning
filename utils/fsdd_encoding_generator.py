@@ -31,8 +31,8 @@ def generate_encodings():
     autoencoder = Autoencoder([4096, 256, 64], pretrain=True, pretrain_epochs=20, finetune_epochs=500, finetune_batch_size=16)
     autoencoder.train(train_images)
 
-    autoencoder.generate_encodings(train_images, train_labels, save_to_path='../data/fsdd_train_encodings_2')
-    autoencoder.generate_encodings(test_images, test_labels, save_to_path='../data/fsdd_test_encodings_2')
+    autoencoder.generate_encodings(train_images, train_labels, save_to_path='./data/fsdd_train_encodings_2')
+    autoencoder.generate_encodings(test_images, test_labels, save_to_path='./data/fsdd_test_encodings_2')
 
 
 if __name__ == '__main__':

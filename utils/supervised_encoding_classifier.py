@@ -17,10 +17,10 @@ def get_classification_score(train_encodings, train_labels, test_encodings, test
 
 
 # ========== FSDD  ===========
-train_encodings = np.load(open('../data/fsdd_train_encodings_2.npy', 'r'))
-train_labels = np.load(open('../data/fsdd_train_encodings_2_labels.npy', 'r'))
-test_encodings = np.load(open('../data/fsdd_test_encodings_2.npy', 'r'))
-test_labels = np.load(open('../data/fsdd_test_encodings_2_labels.npy', 'r'))
+train_encodings = np.load(open('./data/fsdd_train_encodings_2.npy', 'r'))
+train_labels = np.load(open('./data/fsdd_train_encodings_2_labels.npy', 'r'))
+test_encodings = np.load(open('./data/fsdd_test_encodings_2.npy', 'r'))
+test_labels = np.load(open('./data/fsdd_test_encodings_2_labels.npy', 'r'))
 train_labels = np.array([np.int32(label) for label in train_labels])
 test_labels = np.array([np.int32(label) for label in test_labels])
 steps = len(train_encodings) * 200 / batch_size  # ~200 epochs
@@ -28,10 +28,10 @@ print 'FSDD accuracy:', get_classification_score(train_encodings, train_labels, 
 
 
 # ========== MNIST  ===========
-train_encodings = np.load(open('../data/mnist_train_encodings_5.npy', 'r'))
-train_labels = np.load(open('../data/mnist_train_encodings_5_labels.npy', 'r'))
-test_encodings = np.load(open('../data/mnist_test_encodings_5.npy', 'r'))
-test_labels = np.load(open('../data/mnist_test_encodings_5_labels.npy', 'r'))
+train_encodings = np.load(open('./data/mnist_train_encodings_5.npy', 'r'))
+train_labels = np.load(open('./data/mnist_train_encodings_5_labels.npy', 'r'))
+test_encodings = np.load(open('./data/mnist_test_encodings_5.npy', 'r'))
+test_labels = np.load(open('./data/mnist_test_encodings_5_labels.npy', 'r'))
 train_labels = np.array([np.int32(label) for label in train_labels])
 test_labels = np.array([np.int32(label) for label in test_labels])
 steps = len(train_encodings) * 50 / batch_size  # ~ 50 epochs, fewer epochs are needed because its a larger dataset
