@@ -144,16 +144,17 @@ One final neat idea: If the generative output of each modality is looped back in
 ___________________________________________________
 
 ## Code and Installation
-
-
-##### How to use this repository:
-Before using the repository make sure to install all the requirements.
+Before using the repository make sure to install all the requirements. Only Python 2.7 is supported.
 ```bash 
 $ pip install -r requirements.pip
 ```
+You will also need to rename the project's directory from `decoupled-multimodal-learning` to `cdzproject`. 
 
 
 ##### Generating encodings
+Before you can run you will need to generate MNIST and FSDD encodings. In order to do so, clone the [free_spoken_digit_dataset](https://github.com/Jakobovski/free-spoken-digit-dataset) and add its parent directory to your `PYTHONPATH`.
+
+Then run:
 ```bash 
 $ python utils/fsdd_encoding_generator.py
 $ python utils/mnist_encoding_generator.py
